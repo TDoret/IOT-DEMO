@@ -4,6 +4,8 @@ var port = process.env.port || 1337
 
 app.get('/', function (req, res) {
     res.send('Hello World!');
+    res.render('views/index');
+
 });
 
 app.get('/textAnalytics', function (req, res) {
